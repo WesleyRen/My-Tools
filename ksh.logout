@@ -1,0 +1,7 @@
+#if [ "`who | grep $USER | wc -l`" -le 1 -a -f $HOME/.ssh/agent.profile ]; then
+if [ "`ps au | grep $USER| grep bash | grep -v grep | wc -l`" -le 1 -a -f $HOME/.ssh/agent.profile ]; then
+   echo "This appears to be your last login on this machine, removing agent"
+   kill -HUP `$HOME/.ssh/agent.profile | cut -d' ' -f3`
+   rm $HOME/.ssh/agent.profile
+fi
+#echo logout

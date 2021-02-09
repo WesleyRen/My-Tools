@@ -1,0 +1,9 @@
+South Central US-southcentralus
+West US-westus
+East US 2-eastus2
+UK South-uksouth
+UK West-ukwest
+Japan West-japanwest
+Japan East-japaneast
+Canada East-canadaeast
+Canada Central-canadacentral
